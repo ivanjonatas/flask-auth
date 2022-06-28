@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block conteudo %} 
+
+<form action="/users/register" method="POST">
+    <input type="text" name="username" value="{{ request.form.username }}">
+    <input type="password" name="password" value="{{ request.form.password }}">
+    <input type="email" name="email" value="{{ request.form.email }}">
+
+    <button type="submit">Register</button>
+</form>
+
+
+
+{% endblock %}
